@@ -17,8 +17,10 @@ impl EventHandler for Handler {
             println!("Received command interaction: {:#?}", command);
 
             let content = match command.data.name.as_str() {
-                "wouldyourather" => commands::wouldyourather::run(&command.data.options),         _
-                 => "not implemented :(".to_string(),
+                "wouldyourather" => commands::wouldyourather::run(&command.data.options),
+                "neverhaveiever" => commands::neverhaveiever::run(&command.data.options),
+                "wwyd" => commands::wwyd::run(&command.data.options),
+                _ => "not implemented :(".to_string(),
             };
 
             if let Err(why) = command
@@ -47,6 +49,8 @@ impl EventHandler for Handler {
         let commands = GuildId::set_application_commands(&guild_id, &ctx.http, |commands| {
             commands
                 .create_application_command(|command| commands::wouldyourather::register(command))
+                .create_application_command(|command| commands::neverhaveiever::register(command))
+                .create_application_command(|command| commands::wwyd::register(command))
         })
         .await;
 

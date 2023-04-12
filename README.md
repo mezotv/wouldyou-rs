@@ -5,7 +5,13 @@
 
 ## Example
 
-![Example Would You](https://imgur.com/LDQLxYt.png)
+![Example Would You](https://imgur.com/ZjQaENm.png)
+
+## Commands
+
+* /wouldyourather - Sends a random would you rather message
+* /neverhaveiever - Sends a random never have I ever message
+* /wwyd - Sends a random what would you do message
 
 ## How to run:
 

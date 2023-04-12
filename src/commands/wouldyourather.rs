@@ -262,5 +262,5 @@ pub fn run(_options: &[CommandDataOption]) -> String {
 }
 
 pub fn register(command: &mut CreateApplicationCommand) -> &mut CreateApplicationCommand {
-    command.name("wouldyourather").description("Sends a would you rather message")
+    command.name("wouldyourather").description("Sends a random would you rather message")
 }
