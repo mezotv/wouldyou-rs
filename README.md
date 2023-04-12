@@ -9,9 +9,9 @@
 
 ## Commands
 
-* /wouldyourather - Sends a random would you rather message
-* /neverhaveiever - Sends a random never have I ever message
-* /wwyd - Sends a random what would you do message
+* `/wouldyourather` - Sends a random would you rather message
+* `/neverhaveiever` - Sends a random never have I ever message
+* `/wwyd` - Sends a random what would you do message
 
 ## How to run:
 
@@ -19,7 +19,7 @@
 
 2. Once finished run `cmd` to ensure your teminal is valid.
 
-3. FInally run `set DISCORD_TOKEN=<TOKEN> && target\debug\would_you.exe` and boom! Your bot should be working!
+3. Finally run `set DISCORD_TOKEN=<TOKEN> && target\debug\would_you.exe` and boom! Your bot should be working!
 
 ### If you wanna try out the real one make sure to invite it [here](http://wouldyoubot.gg/invite) 
 
